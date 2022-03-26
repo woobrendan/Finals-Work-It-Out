@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import { makeStyles } from "@mui/styles";
 import {useNavigate } from 'react-router-dom'
+import '../components/styles/card.css'
 
 
 
@@ -91,7 +92,7 @@ import {useNavigate } from 'react-router-dom'
     }
   return (
     <>
-     <Paper className={classes.paper}>
+     <Paper className={classes.paper} id="LandingCard">
       <Typography className={classes.top}></Typography>
       <Typography className={classes.bottom}></Typography>
       <Typography className={classes.left}></Typography>
