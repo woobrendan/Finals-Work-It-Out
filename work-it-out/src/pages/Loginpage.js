@@ -39,7 +39,6 @@ export default function LoginPage() {
       .then(function (response) {
         userContext.setUser(response.data.user);
         navigate("/");
-        console.log(response.data.accessToken);
         localStorage.setItem(
           "accessToken",
           JSON.stringify(response.data.accessToken)
