@@ -16,10 +16,7 @@ export default function NavBar() {
     color: '#333'
   };
 
-
-
   return (
-
     <nav className="navbar ">
       <div className="container">
         <div>
@@ -28,7 +25,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className="menu">
-        {user.name && <div>Signed in as:<br></br> {user.name}</div>}
+          {user.name && <div>Signed in as:<br></br> {user.name}</div>}
           <div onClick={() => setShowAuth(!showAuth)} style={linkStyle}>
             <PersonRoundedIcon sx={{fontSize: 50}} />
           </div>
@@ -47,19 +44,23 @@ export default function NavBar() {
                 </div>
               </>
             )}
-            <div>
-              <span>
-                <Link to="/profile" style={linkStyle}>Profile</Link>
-              </span>
-            </div>
-            <div>
-              <span>
-                <div onClick={() => console.log("click")} style={linkStyle}>Logout</div>
-              </span>
-            </div>
+            {user.name && (
+              <>
+                <div>
+                  <span>
+                    <Link to="/profile" style={linkStyle}>Profile</Link>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <div onClick={() => console.log("click")} style={linkStyle}>Logout</div>
+                  </span>
+                </div>
+              </>
+            )}
           </div>}
-        </div>
+        </div>  
       </div>
-    </nav >
+    </nav>
   );
 }
