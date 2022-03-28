@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-
 import ExerciseMenu from "./Exercise_menu";
 import NavMenu from "./Nav_menu";
 
