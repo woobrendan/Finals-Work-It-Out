@@ -54,7 +54,7 @@ export default function RegistrationPage() {
       <Card sx={{ minwidth: 150 }}>
         <CardContent>
           <Typography variant="h2" component="div" className="card-title">
-              Register
+              Registration
           </Typography>
           <br></br>
           <Box
