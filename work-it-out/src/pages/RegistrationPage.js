@@ -53,7 +53,7 @@ export default function RegistrationPage() {
       </video>
       <Card sx={{ minwidth: 150 }}>
         <CardContent>
-          <Typography variant="h2" component="div" className="reg-title">
+          <Typography variant="h2" component="div" className="card-title">
               Register
           </Typography>
           <br></br>
