@@ -36,7 +36,6 @@ export default function RegistrationPage() {
           "accessToken",
           JSON.stringify(response.data.accessToken)
         );
-        console.log(response);
       })
       .catch(function (error) {
         console.log(error);
